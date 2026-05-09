@@ -172,19 +172,6 @@ help-desk-ticketing-lab/
 
 ---
 
-## 🚀 Upcoming Phases
 
-- [ ] **Phase 7** — Wazuh SIEM (log monitoring, threat detection, MITRE ATT&CK)
-- [ ] **Phase 8** — Kali Linux / attack simulation
-- [ ] **Phase 9** — Splunk integration
-- [ ] **Phase 10** — Network traffic analysis with Wireshark
 
 ---
-
-## 👤 Author
-
-**Sreekrishna (Bobby)**  
-CS Student @ UAH | Cybersecurity Track  
-Working toward CompTIA Network+ and ISC2 CC certifications  
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com)
