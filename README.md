@@ -137,31 +137,6 @@ Deployed osTicket v1.18.3 on Ubuntu Server. Configured departments, agents, and 
 - **Scripting:** PowerShell (AD automation)
 - **Networking:** VirtualBox NAT + Internal Network, static IP assignment, netplan
 
-📂 Repository Structure
-help-desk-ticketing-lab/
-├── README.md
-├── configs/
-│   ├── install-osticket.sh
-│   └── 00-installer-config.yaml
-└── screenshots/
-    ├── server-manager.png
-    ├── active-directory.png
-    ├── osticket-install.png
-    ├── osticket-login.png
-    ├── admin-access.png
-    ├── ticket-password-reset.png
-    ├── ticket-password-reset-resolved.png
-    ├── ad-password-reset.png
-    ├── ticket-lockout.png
-    ├── ticket-lockout-resolved.png
-    ├── ad-unlock.png
-    ├── ticket-new-employee.png
-    ├── ticket-new-employee-resolved.png
-    ├── ticket-printer-resolved.png
-    ├── ticket-vpn.png
-    ├── ticket-vpn-resolved.png
-    ├── departments.png
-    └── departments-list.png
 
 ⚙️ Configuration Files
 configs/install-osticket.sh
