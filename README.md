@@ -2,13 +2,11 @@
 
 A hands-on IT/cybersecurity lab simulating a real enterprise help desk environment — built to develop practical skills in Active Directory, ticketing systems, help desk operations, and networking.
 
----
 
 ## 📋 Overview
 
 This project documents the full build-out of a virtualized corporate IT environment using VirtualBox. The lab simulates a small organization called **TechOps** with a Windows Server domain controller, Windows 10 workstation, Ubuntu server, and a ticketing system — all networked together on an internal LAN.
 
----
 
 ## 🖥️ Lab Environment
 
@@ -21,7 +19,6 @@ This project documents the full build-out of a virtualized corporate IT environm
 **Network:** VirtualBox Internal Network (`homelab-net`) + NAT for internet access  
 **Domain:** `techops.local`
 
----
 
 ## ✅ Phases Completed
 
@@ -32,7 +29,6 @@ This project documents the full build-out of a virtualized corporate IT environm
 - Configured DNS and joined Windows 10 to `techops.local` domain
 - Set up dual-adapter networking (NAT + Internal Network) across all VMs
 
----
 
 ### Phase 5 — Active Directory
 
@@ -64,7 +60,6 @@ Configured a full Active Directory environment with OUs, users, security groups,
 *Active Directory Users and Computers — OUs and Users*
 ![Active Directory](screenshots/active-directory.png)
 
----
 
 ### Phase 6 — Help Desk (osTicket)
 
@@ -131,7 +126,6 @@ Deployed osTicket v1.18.3 on Ubuntu Server. Configured departments, agents, and 
 *Departments Overview*
 ![Departments](screenshots/departments.png)
 
----
 
 ## 🔧 Tools & Technologies
 
@@ -143,4 +137,38 @@ Deployed osTicket v1.18.3 on Ubuntu Server. Configured departments, agents, and 
 - **Scripting:** PowerShell (AD automation)
 - **Networking:** VirtualBox NAT + Internal Network, static IP assignment, netplan
 
----
+📂 Repository Structure
+help-desk-ticketing-lab/
+├── README.md
+├── configs/
+│   ├── install-osticket.sh
+│   └── 00-installer-config.yaml
+└── screenshots/
+    ├── server-manager.png
+    ├── active-directory.png
+    ├── osticket-install.png
+    ├── osticket-login.png
+    ├── admin-access.png
+    ├── ticket-password-reset.png
+    ├── ticket-password-reset-resolved.png
+    ├── ad-password-reset.png
+    ├── ticket-lockout.png
+    ├── ticket-lockout-resolved.png
+    ├── ad-unlock.png
+    ├── ticket-new-employee.png
+    ├── ticket-new-employee-resolved.png
+    ├── ticket-printer-resolved.png
+    ├── ticket-vpn.png
+    ├── ticket-vpn-resolved.png
+    ├── departments.png
+    └── departments-list.png
+
+⚙️ Configuration Files
+configs/install-osticket.sh
+Full bash installation script for deploying osTicket on Ubuntu Server 24.04. Covers system update, LAMP stack installation, database creation, file deployment, and permission setup.
+configs/00-installer-config.yaml
+Netplan network configuration for Ubuntu Server. Configures two network adapters:
+
+enp0s3 — NAT adapter with DHCP for internet access
+enp0s8 — Static IP 10.1.10.20/24 on the internal lab network for VM-to-VM communication
+
